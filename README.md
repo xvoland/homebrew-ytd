@@ -7,8 +7,11 @@ downloader where the thumbnail itself is the progress bar.
 
 ```bash
 brew tap xvoland/ytd
+brew trust xvoland/ytd   # one time; Homebrew rejects untrusted third-party taps
 brew install ytd
 ```
+
+`brew trust` only needs to be run once per machine.
 
 On macOS the binary is ad-hoc signed at install time and any quarantine
 attribute is removed, so Gatekeeper does not block it.
